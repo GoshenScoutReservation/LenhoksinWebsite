@@ -1,81 +1,362 @@
-html, body, .giraffe {height: 100%;}
-
-.lion {background-repeat: no-repeat; background-size: cover; background-image: url('/images/VR_Lake.jpg'); background-position: center center;}
-.lion h2 {margin:0;}
-@media all and (min-width: 768px) {h2 {font-size: 2.5em;}}
-@media all and (min-width: 768px) {.lion h1 {font-size: 6em;}}
-
-.turnip {text-align: center; position: relative;}
-@media screen and (min-width: 768px) {.turnip {top: 33%;}}
-@media screen and (max-width: 768px) {.turnip {top: 15%;}}
-
-h1 {color: #FFFBD2; font-family:'Cinzel',serif; text-shadow: 2px 2px 15px #0E0E0E; text-align: center; font-weight: 700; font-size: 40px;}
-@media all and (min-width: 768px) {h1 {font-size: 4em;}}
-h2 {font-size: 26px; font-family:'Delius',cursive; color: #272300;}
-@media all and (min-width: 768px) {h2 {font-size: 2.5em;}}
-.lizard h2 {color: #FFFBD2;}
-h3 {font-family: 'Delius',cursive;}
-
-.left-right {text-align: left;}
-@media all and (min-width: 769px) {.left-right {text-align: right;}}
-.right-left {text-align: right;}
-@media all and (min-width: 769px) {.right-left {text-align: left;}}
-
-.desk-cat {position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;}
-.foot-cat {position: absolute; bottom: 0; left: 0; right: 0; margin: 0 auto;  text-align: center; padding-bottom: 5%; text-shadow: 2px 2px 8px #0E0E0E;}
-@media all and (max-width: 767px) {.sneaky-desk-cat {position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;}}
-
-.foot-cat a {transition: font-size, 0.3s, ease-out;}
-.foot-cat a:hover, .foot-cat a:focus, .foot-cat a:active {text-decoration: none; font-size: 1.15em; transition: font-size, 0.3s, ease-in;}
-
-.tadpole {height:40%;}
-@media all and (max-width: 767px) {.tadpole{height: 60%;}}
-
-.raccoon, .neg-raccoon {position: absolute !important; top: 0; right: 1px; text-align: center; z-index: 903; width: 100%; background-color: transparent !important; border-color: transparent: !important; border-radius: 0 !important; padding-top: 2% !important;}
-.raccoon a, .raccoon button {color: #69600a; font-family:'Delius',cursive;font-size: 2em !important;}
-.raccoon a:hover, .raccoon a:active, .raccoon a:focus, .raccoon button:hover, .raccoon button:active, .raccoon button:focus {color: #272300; background-color: transparent !important;}
-.neg-raccoon a, .neg-raccoon button {color: #FFFBD2; font-family:'Delius',cursive;font-size: 2em !important;}
-.neg-raccoon a:hover, .neg-raccoon a:active, .neg-raccoon a:focus, .neg-raccoon button:hover, .neg-raccoon button:active, .neg-raccoon button:focus {color: #AAA039; background-color: transparent !important;}
-
-.raccoon .hamburger-innards {background-color: #272300; display: block; width: 22px; height: 2px; border-radius: 1px;}
-.hamburger-innards+ .hamburger-innards {margin-top: 4px;}
-.neg-raccoon .hamburger-innards {background-color: #FFFBD2; display: block; width: 22px; height: 2px; border-radius: 1px;}
-
-@media all and (max-width: 767px) {.mouse {position: fixed; top: 0; width: 100%; background: #272300 url('/images/texture-dark_2.jpg') repeat; border-color: transparent !important;}}
-@media all and (max-width: 767px) {.mouse a, .mouse button {color: #FFFBD2; margin-top: 15px;}}
-
-.lizard {padding-bottom: 2%; background: #272300 url('/images/texture-dark_2.jpg') repeat; color: #FFFBD2;}
-.peacock {background: no-repeat fixed center center; padding-bottom: 10%;}
-.toad {background: #ECE389 url('/images/texture-lightmid.jpg') repeat; color: #272300; padding: 20px;}
-.large-toad {background: #ECE389 url('/images/texture-lightmid.jpg') repeat; color: #272300; padding-bottom: 2%;}
-@media all and (max-width: 768px) {.toad {margin: 0 5%;}}
-.lizard h1, .peacock h1, .large-toad h1, footer h2 {padding-top: 2%; padding-bottom: 9px; margin: 40px 0px 20px; border-bottom: 1px solid #FFFBD2;}
-
-.img-responsive {display: inline-block !important;}
-
-.leek {border-collapse: separate; border-spacing: 2px; text-align: center;}
-.leek thead tr td {background-color: #272300; color: #FFFBD2;}
-.leek tbody tr td {background-color: #AAA039; border-color: transparent;}
-
-.neg-leek {border-collapse: separate; border-spacing: 2px; text-align: center;}
-.neg-leek thead tr td {background-color: #69600a; color: #FFFBD2;}
-.neg-leek tbody tr td {background-color: #ECE389; color: #272300; border-color: transparent;}
-
-.cabbage {border-collapse: separate; border-spacing: 2px; display: table; text-align: center; margin-top: 15px;}
-.cabbage thead {display: table-header-group;}
-.cabbage thead tr td {background-color: #272300; color: #FFFBD2;}
-.cabbage tbody tr td {background-color: #AAA039; border-color: transparent;}
-@media (max-width: 767px) {
-	.cabbage, .cabbage tr, .cabbage td {display: block;}
-	.cabbage thead, .cabbage tbody {display: inline-block;}
-	.cabbage td {margin-bottom: 2px; height: 60px; vertical-align: middle;}
+html,
+body,
+.giraffe {
+    height: 100%;
 }
-
-a.haunter-button {display: inline-block; width: 200px; padding: 8px; margin-bottom: 15px; color: #FFFBD2; border: 1px solid #FFFBD2; border-radius: 5px; outline: none; text-decoration: none; transition: background-color 0.2s ease-out, color 0.2s ease-out; background-color: rgba(39, 35, 0, 0.5); z-index: 950;}
-a.haunter-button:hover, a.haunter-button:active {background-color: #FFFBD2; color: #272300; transition: background-color 0.3s ease-in, color 0.3s ease-in;}
-
-a.ghastly-button {display: inline-block; width: 200px; padding: 8px; margin-bottom: 15px; color: #FFFBD2; border: 1px solid transparent; border-radius: 5px; outline: none; text-decoration: none; transition: background-color 0.2s ease-out, color 0.2s ease-out; background-color: rgba(170, 160, 57, 0.25); box-shadow: 1px 1px 5px #0e0e0e; z-index: 950;}
-a.ghastly-button:hover, a.ghastly-button:active {background-color: #FFFBD2; color: #272300; transition: background-color 0.3s ease-in, color 0.3s ease-in;}
-
-a.gengar-button {display: inline-block; width: 200px; padding: 8px; color: #0e0e0e; border: 1px solid #272300; border-radius: 5px; outline: none; text-decoration: none; transition: background-color 0.2s ease-out, color 0.2s ease-out; background-color: rgba(39, 35, 0, 0.5); z-index: 950;}
-a.gengar-button:hover, a.ghastly-button:active {background-color: #272300; color: #FFFBD2; transition: background-color 0.3s ease-in, color 0.3s ease-in;}
+.lion {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/images/VR_Lake.jpg');
+    background-position: center center;
+}
+.lion h2 {
+    margin: 0;
+}
+@media all and (min-width: 768px) {
+    h2 {
+        font-size: 2.5em;
+    }
+}
+@media all and (min-width: 768px) {
+    .lion h1 {
+        font-size: 6em;
+    }
+}
+.turnip {
+    text-align: center;
+    position: relative;
+}
+@media screen and (min-width: 768px) {
+    .turnip {
+        top: 33%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .turnip {
+        top: 15%;
+    }
+}
+h1 {
+    color: #FFFBD2;
+    font-family: 'Cinzel', serif;
+    text-shadow: 2px 2px 15px #0E0E0E;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+@media all and (min-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+h2 {
+    font-size: 26px;
+    font-family: 'Delius', cursive;
+    color: #272300;
+}
+@media all and (min-width: 768px) {
+    h2 {
+        font-size: 2.5em;
+    }
+}
+.lizard h2 {
+    color: #FFFBD2;
+}
+h3 {
+    font-family: 'Delius', cursive;
+}
+.left-right {
+    text-align: left;
+}
+@media all and (min-width: 769px) {
+    .left-right {
+        text-align: right;
+    }
+}
+.right-left {
+    text-align: right;
+}
+@media all and (min-width: 769px) {
+    .right-left {
+        text-align: left;
+    }
+}
+.desk-cat {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.foot-cat {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5%;
+    text-shadow: 2px 2px 8px #0E0E0E;
+}
+@media all and (max-width: 767px) {
+    .sneaky-desk-cat {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+.foot-cat a {
+    transition: font-size, 0.3s, ease-out;
+}
+.foot-cat a:hover,
+.foot-cat a:focus,
+.foot-cat a:active {
+    text-decoration: none;
+    font-size: 1.15em;
+    transition: font-size, 0.3s, ease-in;
+}
+.tadpole {
+    height: 40%;
+}
+@media all and (max-width: 767px) {
+    .tadpole {
+        height: 60%;
+    }
+}
+.raccoon,
+.neg-raccoon {
+    position: absolute !important;
+    top: 0;
+    right: 1px;
+    text-align: center;
+    z-index: 903;
+    width: 100%;
+    background-color: transparent !important;
+    border-color: transparent: !important;
+    border-radius: 0 !important;
+    padding-top: 2% !important;
+}
+.raccoon a,
+.raccoon button {
+    color: #69600a;
+    font-family: 'Delius', cursive;
+    font-size: 2em !important;
+}
+.raccoon a:hover,
+.raccoon a:active,
+.raccoon a:focus,
+.raccoon button:hover,
+.raccoon button:active,
+.raccoon button:focus {
+    color: #272300;
+    background-color: transparent !important;
+}
+.neg-raccoon a,
+.neg-raccoon button {
+    color: #FFFBD2;
+    font-family: 'Delius', cursive;
+    font-size: 2em !important;
+}
+.neg-raccoon a:hover,
+.neg-raccoon a:active,
+.neg-raccoon a:focus,
+.neg-raccoon button:hover,
+.neg-raccoon button:active,
+.neg-raccoon button:focus {
+    color: #AAA039;
+    background-color: transparent !important;
+}
+.raccoon .hamburger-innards {
+    background-color: #272300;
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+.hamburger-innards+ .hamburger-innards {
+    margin-top: 4px;
+}
+.neg-raccoon .hamburger-innards {
+    background-color: #FFFBD2;
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+@media all and (max-width: 767px) {
+    .mouse {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #272300 url('/images/texture-dark_2.jpg') repeat;
+        border-color: transparent !important;
+    }
+}
+@media all and (max-width: 767px) {
+    .mouse a,
+    .mouse button {
+        color: #FFFBD2;
+        margin-top: 15px;
+    }
+}
+.lizard {
+    padding-bottom: 2%;
+    background: #272300 url('/images/texture-dark_2.jpg') repeat;
+    color: #FFFBD2;
+}
+.peacock {
+    background: no-repeat fixed center center;
+    padding-bottom: 10%;
+}
+.toad {
+    background: #ECE389 url('/images/texture-lightmid.jpg') repeat;
+    color: #272300;
+    padding: 20px;
+}
+.large-toad {
+    background: #ECE389 url('/images/texture-lightmid.jpg') repeat;
+    color: #272300;
+    padding-bottom: 2%;
+}
+@media all and (max-width: 768px) {
+    .toad {
+        margin: 0 5%;
+    }
+}
+.lizard h1,
+.peacock h1,
+.large-toad h1,
+footer h2 {
+    padding-top: 2%;
+    padding-bottom: 9px;
+    margin: 40px 0px 20px;
+    border-bottom: 1px solid #FFFBD2;
+}
+.img-responsive {
+    display: inline-block !important;
+}
+.leek {
+    border-collapse: separate;
+    border-spacing: 2px;
+    text-align: center;
+}
+.leek thead tr td {
+    background-color: #272300;
+    color: #FFFBD2;
+}
+.leek tbody tr td {
+    background-color: #AAA039;
+    border-color: transparent;
+}
+.neg-leek {
+    border-collapse: separate;
+    border-spacing: 2px;
+    text-align: center;
+}
+.neg-leek thead tr td {
+    background-color: #69600a;
+    color: #FFFBD2;
+}
+.neg-leek tbody tr td {
+    background-color: #ECE389;
+    color: #272300;
+    border-color: transparent;
+}
+.cabbage {
+    border-collapse: separate;
+    border-spacing: 2px;
+    display: table;
+    text-align: center;
+    margin-top: 15px;
+}
+.cabbage thead {
+    display: table-header-group;
+}
+.cabbage thead tr td {
+    background-color: #272300;
+    color: #FFFBD2;
+}
+.cabbage tbody tr td {
+    background-color: #AAA039;
+    border-color: transparent;
+}
+@media (max-width: 767px) {
+    .cabbage,
+    .cabbage tr,
+    .cabbage td {
+        display: block;
+    }
+    .cabbage thead,
+    .cabbage tbody {
+        display: inline-block;
+    }
+    .cabbage td {
+        margin-bottom: 2px;
+        height: 60px;
+        vertical-align: middle;
+    }
+}
+a.haunter-button {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 15px;
+    color: #FFFBD2;
+    border: 1px solid #FFFBD2;
+    border-radius: 5px;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    background-color: rgba(39, 35, 0, 0.5);
+    z-index: 950;
+}
+a.haunter-button:hover,
+a.haunter-button:active {
+    background-color: #FFFBD2;
+    color: #272300;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+a.ghastly-button {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 15px;
+    color: #FFFBD2;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    background-color: rgba(170, 160, 57, 0.25);
+    box-shadow: 1px 1px 5px #0e0e0e;
+    z-index: 950;
+}
+a.ghastly-button:hover,
+a.ghastly-button:active {
+    background-color: #FFFBD2;
+    color: #272300;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+a.gengar-button {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #0e0e0e;
+    border: 1px solid #272300;
+    border-radius: 5px;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    background-color: rgba(39, 35, 0, 0.5);
+    z-index: 950;
+}
+a.gengar-button:hover,
+a.ghastly-button:active {
+    background-color: #272300;
+    color: #FFFBD2;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
