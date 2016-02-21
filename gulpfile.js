@@ -53,7 +53,7 @@ gulp.task("optimize-css", function() {
 
 gulp.task("optimize-images", function() {
    
-    return gulp.src(["source/images/*"]).
+    return gulp.src(["source/images/**/*"]).
         pipe(imagemin({
             progressive: true,
             use: [pngquant()]
