@@ -25,7 +25,7 @@ gulp.task("default", [
     return gulp.src(["source/**/*.html"]).
         pipe(inline({
           base: "dist/",
-          disabledTypes: ['svg', 'img']
+          disabledTypes: ["svg", "img"]
         })).
         pipe(htmlmin({
             collapseWhitespace: true,
