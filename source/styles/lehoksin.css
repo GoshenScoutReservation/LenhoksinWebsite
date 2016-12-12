@@ -252,6 +252,14 @@ footer h2 {
     background-color: #AAA039;
     border-color: transparent;
 }
+.trek-leek {
+	text-align: left;
+}
+@media all and (min-width: 768px) {
+	.trek-leek {
+		padding-left: 15% !important;
+	}
+}
 .neg-leek {
     border-collapse: separate;
     border-spacing: 2px;
