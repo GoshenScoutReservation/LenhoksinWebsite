@@ -1,2 +1,8 @@
 ---
----
+title: Lenhok'sin High Adventure
+exclude:
+  - node_modules
+  - .gitattributes
+  - .gitignore
+  - CNAME
+  

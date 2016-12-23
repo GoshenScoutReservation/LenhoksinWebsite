@@ -1,78 +1,15 @@
 ---
+layout: base
+title: Treks
+heroImage: /images/DSC0213_1.jpg
 ---
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="/styles/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="/styles/font-awesome.css" rel="stylesheet" type="text/css">
-  <link href="/styles/fonts.css" rel="stylesheet" type="text/css">
-  <link href="/styles/lenhoksin.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-  <nav class="navbar raccoon">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#lha-navbar-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="hamburger-innards"></span>
-          <span class="hamburger-innards"></span>
-          <span class="hamburger-innards"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse navbar-right giraffe mouse" id="lha-navbar-collapse">
-        <ul class="nav navbar-nav sneaky-desk-cat" style="height: 50%;">
-          <li><a href="/">Overview</a></li>
-          <li><a href="/treks.html">Treks</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li>
-            <button type="button" class="collapsed visible-xs-inline-block" style="background-color: transparent; border-color: transparent;"
-            data-toggle="collapse" data-target="#lha-navbar-collapse" aria-expanded="false">X</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container-fluid giraffe">
-    <div class="row giraffe">
-      <div class="col-xs-12 giraffe lion" style="background-image: url('/images/DSC0213_1.jpg');">
-        <div class="row desk-cat" style="height: 30%;">
-          <div class="col-md-3 col-md-offset-7 col-xs-offset-2">
-            <h1>Treks</h1>
-          </div>
-        </div>
-        <div class="foot-cat">
-          <a href="#about"><h2 style="color: #FFFBD2;">Learn More<br/><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h2></a>
-        </div>
-      </div>
-    </div>
-  </div>
+{% include nav.html %}
+{% include title.html %}
 
   <div class="container-fluid">
     <div class="row lizard">
       <div class="col-md-8 col-md-offset-2" id="about">
-        <h1>About the Treks</h1>
-        <p>A week at Lenhok'sin High Adventure begins on Sunday afternoon, with an optional Monday morning arrival accommodation
-          for LDS units. Crews spend the first day making final preparations to go on the trail before embarking on Monday
-          to spend 5 days and 4 nights on one of three different treks: Lenhok'sin Trail (our main program), James River,
-          and Trail &amp; River Combo.</p>
-        <p style="text-align: center;"><a class="ghastly-button" href="#lt">Lenhok'sin Trail</a> <a class="ghastly-button" href="#jr">James River</a>
-          <a
-          class="ghastly-button" href="#trc">Trail &amp; River Combo</a>
-        </p>
-        <p>Each trek is a fun and strenuous adventure that will challenge your crew. Looking for even more of a challenge? Take
-          a glance at the awards we offer.</p>
-        <p style="text-align: center;"><a class="ghastly-button" href="#awards">Awards</a></p>
-        <p>We provide the food for all three treks.</p>
-        <p style="text-align: center;"><a class="ghastly-button" href="#food">Food</a></p>
-        <p>The Lenhok'sin Trail and Trail &amp; River Combo Treks include up to four evenings taking on adventure, exploring
-          history, and experiencing the wilderness at our outposts.</p>
-        <p style="text-align: center;"><a class="ghastly-button" href="#outposts">Outposts</a></p>
-        <p>Crews return to base camp on Friday where we have our closing celebrations, including the presentation of the coveted
-          Lenhok'sin High Adventure patch and any awards that have been earned. Crews depart early on Saturday.</p>
+        {% include treks/about.md %}
       </div>
     </div>
   </div>
@@ -80,50 +17,7 @@
   <div class="container-fluid">
     <div class="row peacock" style="background-image: url('/images/DSC0297_1.jpg')">
       <div class="col-md-8 col-md-offset-2" id="lt">
-        <h1>Lenhok'sin Trail</h1>
-        <div class="toad">
-          <p>As our main attraction and primary program, this trek focuses on backpacking through the 4,000+ acres of Goshen
-            Scout Reservation and 35,000 acres of surrounding state game lands.</p>
-          <p>Crews will spend five days and four nights on the trail and will have an opportunity to visit up to four of our
-            staffed outposts or other exciting activities.</p>
-          <p>Crews fill out a survey prior to arriving at camp. We design Crew itineraries based on the interest in certain
-            outposts and award opportunities as indicated by the Crew. Itineraries can fit a wide range of Crew abilities,
-            from experienced backpackers to those who have only been a few times before.</p>
-          <p style="text-align: center;"><a class="gengar-button" href="#awards">Awards</a> <a class="gengar-button" href="#food">Food</a>
-            <a class="gengar-button" href="#outposts">Outposts</a>
-          </p>
-          <table class="table leek">
-            <tbody>
-              <tr>
-                <td>Crew Size</td>
-                <td>4 - 12 people</td>
-              </tr>
-              <tr>
-                <td>Minimum Age</td>
-                <td>13 years old by Sept 1, 2016</td>
-              </tr>
-              <tr>
-                <td>Experience Level</td>
-                <td>Participants should have been backpacking before.</td>
-              </tr>
-              <tr>
-                <td>Training Requirements</td>
-				<td class="trek-leek">All Adults must have:
-					<ul>
-					  <li>Youth Protection Training</li>
-					</ul>
-					One or more crew members must have:
-					<ul>
-					  <li>Wilderness First Aid</li>
-					  <li>CPR</li>
-					  <li>Weather Hazards Training</li>
-					  <li>Safe Swim Defense</li>
-					</ul>
-				</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        {% include treks/TrailTrek.md %}
       </div>
     </div>
   </div>
@@ -131,90 +25,8 @@
   <div class="container-fluid">
     <div class="row lizard">
       <div class="col-md-8 col-md-offset-2" id="jr">
-        <h1>James River</h1>
-		<p>Canoe the James River for 4 nights and 5 days and take in one of Virginia's most scenic rivers. Paddle 61 miles of the historic upper James River in Virginia from the headwaters at Iron Gate to the Snowden Dam. Experience over 100 class I rapids, and 20 challenging class II rapids, and the infamous Balcony Falls rapid. Bring your fishing pole and try your hand at fishing along the way. Camp nightly at wilderness river side locations along the way. Add an optional river clean up project and this trek meets the 50 Miler award requirements.</p>
-		<p>All medical checks and swim tests will be conducted at Base Camp. We will outfit you with food and see to it that you are ready to hit the river on Monday.</p>
-		<p>This trip is self-guided.</p>
-		<p style="text-align: center;"><a class="ghastly-button" href="#awards">Awards</a> <a class="ghastly-button" href="#food">Food</a></p>
-		<table class="table neg-leek">
-			<tbody>
-				<tr>
-					<td>Crew Size</td>
-					<td>Minimum 6 people</td>
-				</tr>
-				<tr>
-					<td>Minimum Age</td>
-					<td>13 years old by Sept 1, 2016</td>
-				</tr>
-				<tr>
-					<td>Experience Level</td>
-					<td>Participants should have basic skills and familiarity with moving water and whitewater paddling. Prior canoeing experience is a must.</td>
-				</tr>
-				<tr>
-					<td>Training Requirements</td>
-					<td class="trek-leek">All Adults must have:
-						<ul>
-						  <li>Youth Protection Training</li>
-						</ul>
-						One or more crew members must have:
-						<ul>
-						  <li>Wilderness First Aid</li>
-						  <li>CPR</li>
-						  <li>Weather Hazards Training</li>
-						  <li>Safe Swim Defense</li>
-						  <li>Safety Afloat</li>
-						  <li>Aquatics Supervision: Paddle Craft Safety</li>
-						</ul>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row peacock" style="background-image: url('/images/DSCF2576_1.jpg'); background-position: center bottom;">
-      <div class="col-md-8 col-md-offset-2" id="trc">
-        <h1>Trail &amp; River Combination</h1>
-        <div class="toad">
-			<p>For those who want to do both backpacking and canoe trekking. Spend 1, 2, or 3 days on a self-guided river trip and spend the other parts of your week enjoying Lenhok'sin's wilderness, views, and outposts.</p>
-			<p style="text-align: center;"><a class="gengar-button" href="#awards">Awards</a> <a class="gengar-button" href="#food">Food</a> <a class="gengar-button" href="#outposts">Outposts</a></p>
-			<table class="table leek">
-				<tbody>
-					<tr>
-						<td>Crew Size</td>
-						<td>Minimum 6 people</td>
-					</tr>
-					<tr>
-						<td>Minimum Age</td>
-						<td>13 years old by Sept 1, 2016</td>
-					</tr>
-					<tr>
-						<td>Experience Level</td>
-						<td>Participants should have been backpacking before.<br/>Participants should also have basic skills and familiarity with moving water and whitewater paddling.</td>
-					</tr>
-					<tr>
-						<td>Training Requirements</td>
-						<td class="trek-leek">All Adults must have:
-							<ul>
-							  <li>Youth Protection Training</li>
-							</ul>
-							One or more crew members must have:
-							<ul>
-							  <li>Wilderness First Aid</li>
-							  <li>CPR</li>
-							  <li>Weather Hazards Training</li>
-							  <li>Safe Swim Defense</li>
-							  <li>Safety Afloat</li>
-							  <li>Aquatics Supervision: Paddle Craft Safety</li>
-							</ul>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-        </div>
-      </div>
+        {% include treks/RiverTrek.md %}
+        </div>      
     </div>
   </div>
 
@@ -351,48 +163,3 @@
     <div class="row peacock" style="background-image: url('/images/Scenery_2.jpg'); height: 200px;">
     </div>
   </div>
-
-</body>
-
-<footer>
-  <div class="container-fluid">
-    <div class="row lizard">
-      <div class="col-md-8 col-md-offset-2" style="text-align: center;">
-        <div class="row">
-          <div class="col-sm-4">
-            <h2>Stay Connected</h2>
-            <p>Shoot us an email!
-              <br/><a href="mailto: lenhoksin@gmail.com">lenhoksin@gmail.com</a></p>
-            <p>Follow us on Facebook!
-              <br/><a target="_blank" href="http://www.facebook.com/lenhoksin">www.facebook.com/lenhoksin</a></p>
-            <p>Lenhok'sin Main Page
-              <br/><a target="_blank" href="http://www.ncacbsa.org/lenhoksin">www.ncacbsa.org/lenhoksin</a></p>
-          </div>
-          <div class="col-sm-4">
-            <img class="img-responsive" src="/images/Christian Trocki LHA Logo.png" style="max-width: 100%; max-height: 200px; margin-top: 30px;"
-            />
-          </div>
-          <div class="col-sm-4">
-            <h2>Related</h2>
-            <p>Goshen Scout Reservation
-              <br/><a target="_blank" href="http://gotogoshen.org">gotogoshen.org</a></p>
-            <p>Goshen Registration
-              <br/><a target="_blank" href="http://register.gotogoshen.org">register.gotogoshen.org</a></p>
-            <p>National Capital Area Council
-              <br/><a target="_blank" href="www.ncacbsa.org">www.ncacbsa.org</a></p>
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="/scripts/tagger/tagger.js" async></script>
-  <script src="/scripts/smooth-scroll.js" async></script>
-  <script src="/scripts/google-analytics.js" async></script>
-  
-</footer>
-
-</html>
