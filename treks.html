@@ -32,54 +32,12 @@ lmColor: "#FFFBD2"
     </div>
   </div>
 
+  {% include picSpacer.html bgimgvar='/images/DSCF2576_1.jpg' %}
+
   <div class="container-fluid">
     <div class="row lizard">
       <div class="col-md-8 col-md-offset-2" id="awards" style="text-align: center;">
-        <h1>Awards</h1>
-        <div class="row" style="padding-bottom: 2%;">
-          <div class="col-md-6 col-md-push-3">
-            <img class="img-responsive" src="/images/awards/LHA.png" style="max-width: 50%;" />
-            <h2>Lenhok'sin High Adventure<br/>Patch</h2>
-            <p>Awarded to those who complete a trek at Lenhok'sin High Adventure. Neither sold nor given to anyone who hasn't
-              earned it.</p>
-          </div>
-          <div class="col-md-3 col-md-pull-6">
-            <img class="img-responsive" src="/images/awards/Trailblazer.png" style="max-width: 50%;" />
-            <h2>Trailblazer<br/>Award</h2>
-            <p>To recognize those crews choosing to make the most of their week on the trail by showing extra effort.</p>
-          </div>
-          <div class="col-md-3">
-            <img class="img-responsive" src="/images/awards/Wilderness.png" style="max-width: 50%; " />
-            <h2>Wilderness<br/>Award</h2>
-            <p>An award for those crews that really want to get out there and away from everything.</p>
-          </div>
-        </div>
-        <div class="row" style="padding-bottom: 2%;">
-          <div class="col-md-4">
-            <img class="img-responsive" src="/images/awards/BigButt.png" style="max-width: 50%;" />
-            <h2>Big Butt<br/>Award</h2>
-            <p>Big Butt is our toughest climb, not for the weak of heart. We're not kidding. That really is the mountain's name.</p>
-          </div>
-          <div class="col-md-4">
-            <img class="img-responsive" src="/images/awards/M5P.png" style="max-width: 50%;" />
-            <h2>Moore 5 Peaks<br/>Award</h2>
-            <p>Named after Sam Moore, in honor of his years of maintenance of the trails. To be worthy of this award, crews
-              must climb all five peaks: Viewing Rock, Jump Rock, The Knob, Forge Rock, and Big Butt.</p>
-          </div>
-          <div class="col-md-4">
-            <img class="img-responsive" src="/images/50 Miler.png" style="max-width: 50%;" />
-            <h2>50 Miler<br/>Award</h2>
-            <p>An official BSA award earned by those who display personal fitness, self-reliance, knowledge of wood lore, and
-              a practical understanding of conservation.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4">
-            <img class="img-responsive" src="/images/DtG.png" style="max-width: 50%;" />
-            <h2>Duty to God<br/>Award</h2>
-            <p>The Goshen Scout Reservation religious award.</p>
-          </div>
-        </div>
+        {% include treks/awards.html%}
       </div>
     </div>
   </div>
@@ -87,12 +45,7 @@ lmColor: "#FFFBD2"
   <div class="container-fluid">
     <div class="row peacock" style="background-image: url('/images/DSC0041_1.jpg');">
       <div class="col-md-8 col-md-offset-2" id="food">
-        <h1>Food</h1>
-        <div class="toad">
-          <p>The menu and the nutritional information for 2016 will be available soon.</p>
-          <p>If you have any questions about the menu or have concerns about special dietary concerns, please send us an email
-            at <a href="mailto:lenhoksin@gmail.com">lenhoksin@gmail.com</a>.</p>
-        </div>
+        {% include treks/food.html %}
       </div>
     </div>
   </div>
@@ -100,68 +53,9 @@ lmColor: "#FFFBD2"
   <div class="container-fluid">
     <div class="row lizard">
       <div class="col-md-8 col-md-offset-2" id="outposts">
-        <h1>Outposts &amp; Activities</h1>
-        <div class="row" style="text-align: center; padding-bottom: 2%;">
-          <div class="col-md-4">
-            <img class="img-responsive" src="/images/Aquatics.jpg" style="margin: 2%; max-height: 50%;" />
-            <h2>Aquatics</h2>
-            <p>Paddle around the 450 acre Lake Merriweather in kayaks or on Stand-Up Paddleboards.</p>
-          </div>
-          <div class="col-md-4">
-            <img class="img-responsive" src="/images/Caving.jpg" style="margin: 2%; max-height: 50%;" />
-            <h2>Caving</h2>
-            <p>Spend hours underground exploring a "very cool" setting.</p>
-          </div>
-          <div class="col-md-4">
-            <img class="img-responsive" src="/images/COPE.jpg" style="margin: 2%; max-height: 50%;" />
-            <h2>COPE High Elements</h2>
-            <p>Challenge yourself on the high elements of Goshen Scout Reservation's COPE Course.</p>
-          </div>
-        </div>
-        <div class="row" style="text-align: center; padding-bottom: 2%;">
-          <div class="col-md-4">
-            <img class="img-responsive" src="/images/Foxfire.jpg" style="margin: 2%; max-height: 50%;" />
-            <h2>Foxfire</h2>
-            <p>Venture into early 1900s Appalachia and make knives, S-hooks, and other creations at the forge.</p>
-          </div>
-          <div class="col-md-4">
-            <img class="img-responsive" src="/images/MountainMan.jpg" style="margin: 2%; max-height: 50%;" />
-            <h2>Mountain Man</h2>
-            <p>Trade and shoot with fur trappers from the early 1800s as they blaze their way westward and manifest their destiny.</p>
-          </div>
-          <div class="col-md-4">
-            <img class="img-responsive" src="/images/MountainSports.jpg" style="margin: 2%; max-height: 50%;" />
-            <h2>Mountain Sports</h2>
-            <p>Whether you're new or experienced, you'll have fun mountain biking the trails and going downhill on mountain
-              boards.</p>
-          </div>
-        </div>
-        <div class="row" style="text-align: center; padding-bottom: 2%;">
-          <div class="col-md-4">
-            <img class="img-responsive" src="/images/Scenery.jpg" style="margin: 2%; max-height: 50%;" />
-            <h2>Primitive</h2>
-            <p>Discover the wilderness with your Crew on your way to great views and wild experiences. We highly recommend doing
-              a primitive night out in the beautiful and rugged Goshen backcountry, especially if you are hoping to reach
-              our more challenging peaks, like Big Butt.</p>
-          </div>
-          <div class="col-md-4">
-            <img class="img-responsive" src="/images/RobinHood.jpg" style="margin: 2%; max-height: 50%;" />
-            <h2>Robin Hood</h2>
-            <p>Step into legend with forest outlaws from medieval times. Shoot archery, take on challenges, and see what it
-              takes to win the day.</p>
-          </div>
-          <div class="col-md-4">
-            <img class="img-responsive" src="/images/RockClimbing.jpg" style="margin: 2%; max-height: 50%;" />
-            <h2>Rock Climbing</h2>
-            <p>Enjoy the views and spend your afternoon on our natural rock faces. All experience levels are welcome.</p>
-          </div>
-        </div>
-
+        {% include treks/outposts.html%}
       </div>
     </div>
   </div>
 
-  <div class="container-fluid">
-    <div class="row peacock" style="background-image: url('/images/Scenery_2.jpg'); height: 200px;">
-    </div>
-  </div>
+{% include picSpacer.html bgimgvar='/images/Scenery_2.jpg' %}
